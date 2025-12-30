@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Forked Repositories - otw1248</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background:  linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background:  white;
+            border-radius: 12px;
+            box-shadow:  0 10px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #24292e 0%, #1a1e22 100%);
+            color:  white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size:  1.1em;
+            opacity: 0.9;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            background: #f6f8fa;
+            padding: 20px;
+            border-bottom: 1px solid #e1e4e8;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight:  bold;
+            color: #0366d6;
+        }
+
+        .stat-label {
+            color: #586069;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .repo-card {
+            background: #ffffff;
+            border:  1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom:  20px;
+            transition: all 0.3s ease;
+        }
+
+        .repo-card:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .repo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 15px;
+        }
+
+        .repo-title {
+            font-size: 1.4em;
+            color: #0366d6;
+            text-decoration: none;
+            font-weight: 600;
+            flex:  1;
+        }
+
+        .repo-title:hover {
+            text-decoration: underline;
+        }
+
+        .repo-meta {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .badge {
+            background: #0366d6;
+            color: white;
+            padding: 4px 10px;
+            border-radius:  12px;
+            font-size:  0.75em;
+            font-weight:  600;
+        }
+
+        .language-badge {
+            background: #f1e05a;
+            color: #24292e;
+        }
+
+        .description {
+            color: #586069;
+            margin-bottom:  15px;
+            line-height:  1.6;
+        }
+
+        .repo-stats {
+            display: flex;
+            gap: 15px;
+            font-size: 0.9em;
+            color: #586069;
+        }
+
+        . repo-stat {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        .original-repo {
+            background: #f6f8fa;
+            padding: 10px;
+            border-radius: 6px;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+        .original-link {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        .original-link:hover {
+            text-decoration:  underline;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            color: #24292e;
+            border-bottom: 2px solid #0366d6;
+            padding-bottom: 10px;
+        }
+
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding:  15px;
+            margin-bottom: 30px;
+            border-radius:  4px;
+        }
+
+        footer {
+            background: #f6f8fa;
+            padding: 20px;
+            text-align:  center;
+            color: #586069;
+            border-top: 1px solid #e1e4e8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍴 Popular Forked Repositories</h1>
+            <p>Curated collection of forks by <strong>otw1248</strong></p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">304</div>
+                <div class="stat-label">Total Forks</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">20</div>
+                <div class="stat-label">Featured Here</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2023-2024</div>
+                <div class="stat-label">Active Years</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="note">
+                <strong>📌 Note:</strong> This page showcases a selection of the most notable forked repositories.  
+                <a href="https://github.com/otw1248? tab=repositories&q=&type=fork" target="_blank">View all 304 forks on GitHub</a>
+            </div>
+
+            <h2 class="section-title">Featured Repositories</h2>
+
+            <!-- Repository 1 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/fork-EbookFoundation-free-programming-books" class="repo-title" target="_blank">
+                        📚 fork-EbookFoundation-free-programming-books
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 1</span>
+                    </div>
+                </div>
+                <p class="description">
+                    📖 Freely available programming books - A comprehensive collection of free programming books covering various languages and technologies.  This is one of the most popular GitHub repositories for learning resources.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks:  0</span>
+                    <span class="repo-stat">📅 Created: July 2023</span>
+                    <span class="repo-stat">📝 License: CC-BY-4.0</span>
+                </div>
+                <div class="original-repo">
+                    Original:  <a href="https://github.com/EbookFoundation/free-programming-books" class="original-link" target="_blank">EbookFoundation/free-programming-books</a> (Network: 65,667 forks)
+                </div>
+            </div>
+
+            <!-- Repository 2 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/fork-jwasham--coding-interview-university" class="repo-title" target="_blank">
+                        🎓 fork-jwasham--coding-interview-university
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    💼 A complete computer science study plan to become a software engineer. This comprehensive guide covers algorithms, data structures, system design, and everything needed to ace technical interviews at top tech companies.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created: March 2024</span>
+                    <span class="repo-stat">📝 License: CC-BY-SA-4.0</span>
+                </div>
+                <div class="original-repo">
+                    Original: <a href="https://github.com/jwasham/coding-interview-university" class="original-link" target="_blank">jwasham/coding-interview-university</a> (Network:  81,542 forks)
+                </div>
+            </div>
+
+            <!-- Repository 3 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/brew-fork" class="repo-title" target="_blank">
+                        🍺 brew-fork
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    🔧 The missing package manager for macOS (or Linux). Homebrew is the most popular package manager for macOS, making it easy to install and manage software packages and development tools.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created: September 2024</span>
+                    <span class="repo-stat">📝 License: BSD-2-Clause</span>
+                </div>
+                <div class="original-repo">
+                    Original: <a href="https://github.com/Homebrew/brew" class="original-link" target="_blank">Homebrew/brew</a> (Network: 10,830 forks)
+                </div>
+            </div>
+
+            <!-- Repository 4 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/fork-KillianLucas-open-interpreter" class="repo-title" target="_blank">
+                        🤖 fork-KillianLucas-open-interpreter
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    💻 OpenAI's Code Interpreter in your terminal, running locally.  This project enables you to run AI-powered code interpretation and execution locally, providing powerful automation capabilities right from your command line.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created: September 2023</span>
+                    <span class="repo-stat">📝 License: MIT</span>
+                </div>
+                <div class="original-repo">
+                    Original: <a href="https://github.com/openinterpreter/open-interpreter" class="original-link" target="_blank">openinterpreter/open-interpreter</a> (Network: 5,266 forks)
+                </div>
+            </div>
+
+            <!-- Repository 5 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/CyberChef-gchq-fork" class="repo-title" target="_blank">
+                        🔐 CyberChef-gchq-fork
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    🛠️ The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis. CyberChef is a powerful tool for cybersecurity professionals and developers to perform various data operations.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created:  August 2024</span>
+                    <span class="repo-stat">📝 License: Apache-2.0</span>
+                </div>
+                <div class="original-repo">
+                    Original: <a href="https://github.com/gchq/CyberChef" class="original-link" target="_blank">gchq/CyberChef</a> (Network:  3,798 forks)
+                </div>
+            </div>
+
+            <!-- Repository 6 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/fork-StanGirard-quivr" class="repo-title" target="_blank">
+                        🧠 fork-StanGirard-quivr
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    🤖 Your Generative AI Second Brain - Dump all your files and chat with them using LLMs (GPT 3.5/4, Private, Anthropic, VertexAI) & Embeddings.  A powerful AI-powered knowledge management system.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created: August 2023</span>
+                    <span class="repo-stat">📝 License: Apache-2.0</span>
+                </div>
+                <div class="original-repo">
+                    Original: <a href="https://github.com/QuivrHQ/quivr" class="original-link" target="_blank">QuivrHQ/quivr</a> (Network: 3,703 forks)
+                </div>
+            </div>
+
+            <!-- Repository 7 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/fork-spring-data-examples" class="repo-title" target="_blank">
+                        🌱 fork-spring-data-examples
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    📦 Spring Data Example Projects - Official examples demonstrating various Spring Data modules including JPA, MongoDB, Redis, and more. Essential resource for Spring developers.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created: November 2023</span>
+                    <span class="repo-stat">📝 License: Apache-2.0</span>
+                </div>
+                <div class="original-repo">
+                    Original: <a href="https://github.com/spring-projects/spring-data-examples" class="original-link" target="_blank">spring-projects/spring-data-examples</a> (Network: 3,424 forks)
+                </div>
+            </div>
+
+            <!-- Repository 8 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/fork-Spring-Cloud-Platform" class="repo-title" target="_blank">
+                        ☁️ fork-Spring-Cloud-Platform
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    🔥 China's first Spring Cloud microservice RBAC management platform. Core uses Spring Boot 2.4, Spring Cloud 2020.0.0 & Alibaba, frontend uses d2-admin.  A comprehensive microservices architecture example.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created:  August 2023</span>
+                    <span class="repo-stat">📝 License: Other</span>
+                </div>
+                <div class="original-repo">
+                    Original: <a href="https://github.com/wxiaoqi/Spring-Cloud-Platform" class="original-link" target="_blank">wxiaoqi/Spring-Cloud-Platform</a> (Network: 2,376 forks)
+                </div>
+            </div>
+
+            <!-- Repository 9 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/fork-microsoft-CDM" class="repo-title" target="_blank">
+                        📊 fork-microsoft-CDM
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 1</span>
+                        <span class="badge language-badge">C#</span>
+                    </div>
+                </div>
+                <p class="description">
+                    🏢 The Common Data Model (CDM) - Microsoft's standard and extensible collection of schemas representing business concepts and activities with well-defined semantics to facilitate data interoperability.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created: September 2023</span>
+                    <span class="repo-stat">📝 License: CC-BY-4.0</span>
+                </div>
+                <div class="original-repo">
+                    Original: <a href="https://github.com/microsoft/CDM" class="original-link" target="_blank">microsoft/CDM</a> (Network:  551 forks)
+                </div>
+            </div>
+
+            <!-- Repository 10 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/fork-wepy" class="repo-title" target="_blank">
+                        📱 fork-wepy
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    🎯 WeChat Mini Program Component Framework - A framework that allows developers to build WeChat mini programs using component-based development patterns similar to Vue.js.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created: August 2023</span>
+                </div>
+                <div class="original-repo">
+                    Original repository forked from WeChat Mini Program ecosystem
+                </div>
+            </div>
+
+            <!-- Repository 11 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/fork-goodsKill" class="repo-title" target="_blank">
+                        🛒 fork-goodsKill
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    ⚡ Flash Sale System - A high-concurrency e-commerce flash sale system built with Spring Boot, demonstrating distributed systems, caching strategies, and high-performance architecture patterns.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created:  August 2023</span>
+                </div>
+                <div class="original-repo">
+                    Original repository focused on high-concurrency scenarios
+                </div>
+            </div>
+
+            <!-- Repository 12 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/fork-ecs" class="repo-title" target="_blank">
+                        🐳 fork-ecs
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    ☁️ Elastic Compute Service examples and configurations - Resources and examples for working with cloud computing services, containerization, and cloud-native applications.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created: August 2023</span>
+                </div>
+                <div class="original-repo">
+                    Original repository for cloud computing examples
+                </div>
+            </div>
+
+            <!-- Repository 13 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/fork-apache-hadoop" class="repo-title" target="_blank">
+                        🐘 fork-apache-hadoop
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    📊 Apache Hadoop - The industry-standard framework for distributed storage and processing of very large datasets using the MapReduce programming model. Essential for big data processing.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created:  August 2023</span>
+                </div>
+                <div class="original-repo">
+                    Original:  <a href="https://github.com/apache/hadoop" class="original-link" target="_blank">apache/hadoop</a>
+                </div>
+            </div>
+
+            <!-- Repository 14 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/fork-mybatis-3" class="repo-title" target="_blank">
+                        💾 fork-mybatis-3
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    🗄️ MyBatis 3 - A first-class persistence framework with support for custom SQL, stored procedures, and advanced mappings. MyBatis eliminates almost all JDBC code and manual parameter setting.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created:  July 2023</span>
+                </div>
+                <div class="original-repo">
+                    Original: <a href="https://github.com/mybatis/mybatis-3" class="original-link" target="_blank">mybatis/mybatis-3</a>
+                </div>
+            </div>
+
+            <!-- Repository 15 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/fork-ali-dbhub" class="repo-title" target="_blank">
+                        🗃️ fork-ali-dbhub
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    💼 Alibaba Database Hub - A unified database management platform supporting multiple database types, providing visual management, SQL execution, and data migration capabilities.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks:  0</span>
+                    <span class="repo-stat">📅 Created: August 2023</span>
+                </div>
+                <div class="original-repo">
+                    Original repository from Alibaba's open-source projects
+                </div>
+            </div>
+
+            <!-- Repository 16 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/fork-microsoft-ai-fundamentals" class="repo-title" target="_blank">
+                        🤖 fork-microsoft-ai-fundamentals
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    🎓 Microsoft AI Fundamentals - Educational resources and hands-on labs for learning AI concepts, machine learning basics, and Azure AI services. Perfect for beginners in AI/ML.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created: October 2023</span>
+                </div>
+                <div class="original-repo">
+                    Original: <a href="https://github.com/MicrosoftLearning/AI-900-AIFundamentals" class="original-link" target="_blank">Microsoft Learning Resources</a>
+                </div>
+            </div>
+
+            <!-- Repository 17 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/java-docs-samples-google-fork" class="repo-title" target="_blank">
+                        ☁️ java-docs-samples-google-fork
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    📚 Google Cloud Java Documentation Samples - Official code samples for Google Cloud Platform services in Java, including examples for Cloud Storage, BigQuery, Cloud Functions, and more.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created:  May 2024</span>
+                </div>
+                <div class="original-repo">
+                    Original: <a href="https://github.com/GoogleCloudPlatform/java-docs-samples" class="original-link" target="_blank">GoogleCloudPlatform/java-docs-samples</a>
+                </div>
+            </div>
+
+            <!-- Repository 18 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/cosy-fork" class="repo-title" target="_blank">
+                        🔧 cosy-fork
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    🤖 Alibaba Cloud AI Coding Assistant - An AI-powered coding plugin that provides intelligent code completion and code example search capabilities within your IDE, helping you write code faster and more efficiently.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created: March 2023</span>
+                </div>
+                <div class="original-repo">
+                    Original: <a href="https://github.com/alibaba-cloud-toolkit/cosy" class="original-link" target="_blank">alibaba-cloud-toolkit/cosy</a> (Network: 28 forks)
+                </div>
+            </div>
+
+            <!-- Repository 19 -->
+            <div class="repo-card">
+                <div class="repo-header">
+                    <a href="https://github.com/otw1248/KuiklyUI" class="repo-title" target="_blank">
+                        🎨 KuiklyUI
+                    </a>
+                    <div class="repo-meta">
+                        <span class="badge">⭐ 0</span>
+                    </div>
+                </div>
+                <p class="description">
+                    🖼️ Kuikly UI Components - A modern UI component library providing ready-to-use, customizable components for building beautiful and responsive web applications quickly.
+                </p>
+                <div class="repo-stats">
+                    <span class="repo-stat">🍴 Forks: 0</span>
+                    <span class="repo-stat">📅 Created:  2025</span>
+                </div>
+                <div class="original-repo">
+                    Original repository for UI component library
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Generated on 2025-12-30 | All repositories belong to <a href="https://github.com/otw1248" style="color: #0366d6; text-decoration: none;">@otw1248</a></p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                This page shows 20 out of 304 total forked repositories.  
+                <a href="https://github.com/otw1248? tab=repositories&q=&type=fork" style="color: #0366d6;">View all forks →</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
